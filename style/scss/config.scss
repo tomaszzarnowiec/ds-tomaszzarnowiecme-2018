@@ -1,0 +1,40 @@
+@import "variables/2018";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: $default-font-size;
+	font-weight: $default-font-weight;
+	font-family: $default-font-family;
+	color: $font-color;
+	background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headers-font-family;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: none;
+	color: $font-color;
+	font-weight: 600;
+}
+
+p {
+	line-height: 1.2em;
+}

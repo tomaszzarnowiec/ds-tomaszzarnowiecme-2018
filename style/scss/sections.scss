@@ -1,0 +1,88 @@
+@import "variables/2018";
+
+.body-section {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	padding-top: 20vh;
+    padding-bottom: 20vh;
+
+	> .container {
+		grid-column-start: 2;
+
+		> h1 {
+			font-size: 2.5em;
+			margin-bottom: 2em;
+		}
+	}
+
+	@media (max-width: 1439px){
+		grid-template-columns: 1fr 10fr 1fr;
+	}
+
+	@media (max-width: 767px){
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+}
+
+.btn {
+	border: 1px solid $color-secondary;
+	color: $color-secondary;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+@import "sections/header";
+@import "sections/home";
+
+.skills {
+	padding-bottom: 0;
+
+ 	.skills-container {
+		> .skill {
+			display: grid;
+			grid-template-columns: 1fr 4fr;
+			align-items: center;
+			margin-bottom: 1.5em;
+
+			> .skill-desc {
+				font-size: 1.3em;
+			}
+
+			> .skill-progress {
+				width: 100%;
+				border: 1px solid #ddd;
+				height: 15px;
+				border-radius: 8px;
+
+				> .skill-percentage {
+					height: 100%;
+					border-top-left-radius: 8px;
+					border-bottom-left-radius: 8px;
+					background-image: $gradient;
+				}
+			}
+
+			@media (max-width: 767px){
+				grid-template-columns: 1fr;
+
+				> .skill-desc {
+					padding-bottom: 5px;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-container {
+	display: flex;
+	align-items: center;
+
+	.portfolio-link {
+		padding-right: 5vw;
+
+		&:last-child {
+			padding-right: 0px;
+		}
+	}
+}

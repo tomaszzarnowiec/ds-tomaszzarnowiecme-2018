@@ -1,0 +1,123 @@
+.body-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding-top: 20vh;
+  padding-bottom: 20vh; }
+  .body-section > .container {
+    grid-column-start: 2; }
+    .body-section > .container > h1 {
+      font-size: 2.5em;
+      margin-bottom: 2em; }
+  @media (max-width: 1439px) {
+    .body-section {
+      grid-template-columns: 1fr 10fr 1fr; } }
+  @media (max-width: 767px) {
+    .body-section {
+      padding-top: 10vh;
+      padding-bottom: 10vh; } }
+
+.btn {
+  border: 1px solid #2E4543;
+  color: #2E4543;
+  padding: 10px 15px;
+  display: inline-block; }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; }
+  header > .container {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header > .container > .menu > ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end; }
+      header > .container > .menu > ul > li {
+        padding-left: 20px; }
+        header > .container > .menu > ul > li:first-child {
+          padding-left: 0; }
+  @media (max-width: 1439px) {
+    header {
+      grid-template-columns: 1fr 10fr 1fr; } }
+
+.home {
+  background-image: linear-gradient(25deg, #194850, #25626d, #327d8c, #409aac);
+  color: #F7F7F3; }
+  .home > .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10vw; }
+    .home > .container > .avatar {
+      background-image: url("http://tomaszzarnowiec.me/assets/images/11.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      align-self: center;
+      width: 280px;
+      height: 280px;
+      border-radius: 15px; }
+    .home > .container > .desc > h1 {
+      margin-top: 0;
+      font-size: 3em;
+      margin-bottom: 1em; }
+    .home > .container > .desc > p {
+      font-size: 1.3em;
+      line-height: 1.5em; }
+    .home > .container > .desc > .btn {
+      margin-top: 30px;
+      display: inline-block;
+      border-color: #F7F7F3;
+      color: #F7F7F3; }
+  @media (max-width: 767px) {
+    .home {
+      padding-top: 10vh;
+      padding-bottom: 10vh; }
+      .home > .container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center; }
+        .home > .container > .avatar {
+          margin: auto;
+          width: 180px;
+          height: 180px; }
+        .home > .container > .desc > h1 {
+          font-size: 2em; }
+        .home > .container > .desc > p {
+          font-size: 1em; } }
+
+.skills {
+  padding-bottom: 0; }
+  .skills .skills-container > .skill {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin-bottom: 1.5em; }
+    .skills .skills-container > .skill > .skill-desc {
+      font-size: 1.3em; }
+    .skills .skills-container > .skill > .skill-progress {
+      width: 100%;
+      border: 1px solid #ddd;
+      height: 15px;
+      border-radius: 8px; }
+      .skills .skills-container > .skill > .skill-progress > .skill-percentage {
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        background-image: linear-gradient(25deg, #194850, #25626d, #327d8c, #409aac); }
+    @media (max-width: 767px) {
+      .skills .skills-container > .skill {
+        grid-template-columns: 1fr; }
+        .skills .skills-container > .skill > .skill-desc {
+          padding-bottom: 5px; } }
+
+.portfolio-container {
+  display: flex;
+  align-items: center; }
+  .portfolio-container .portfolio-link {
+    padding-right: 5vw; }
+    .portfolio-container .portfolio-link:last-child {
+      padding-right: 0px; }
+
+/*# sourceMappingURL=css-maps/sections.css.map */

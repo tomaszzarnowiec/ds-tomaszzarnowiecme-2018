@@ -1,0 +1,31 @@
+$default-font-size: 14px;
+$default-font-weight: 400;
+
+$default-font-family: 'Source Sans Pro', sans-serif;
+$headers-font-family: 'Alegreya', serif;
+
+$color-primary-lightest: #67DBA9;
+$color-primary-light: #3FBA81;
+$color-primary: #1E9E5F;
+$color-primary-dark: #0B8345;
+
+$color-secondary-lightest: #587472;
+$color-secondary-light: #405957;
+$color-secondary: #2E4543;
+$color-secondary-dark: #233836;
+
+// $gradient: linear-gradient(45deg, #1e9e5f, #2c7f56, #30624d, #2e4543);
+// $gradient: linear-gradient(45deg, #3ac298, #38a296, #318493, #22668f);
+$gradient: linear-gradient(25deg, #194850, #25626d, #327d8c, #409aac);
+
+$color-background-lightest: #F7F7F3;
+$color-background-light: #DFDFDA;
+$color-background: #BCBCB6;
+$color-background-dark: #999992;
+
+$font-color: #333;
+$font-color-light: $color-background-lightest;
+
+$primary-color: $color-primary;
+$secondary-color: $color-secondary;
+$background-color: $color-background-lightest;
